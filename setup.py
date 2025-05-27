@@ -11,7 +11,7 @@ APP = ['ct.py']
 DATA_FILES = []
 OPTIONS = {
     'argv_emulation': True,
-    'packages': ['m2secret','cffi','cryptography','M2Crypto','macholib','modulegraph','pycparser','six','altgraph']
+    'packages': ['m2secret','cffi','cryptography','M2Crypto','macholib','modulegraph','pycparser','six','altgraph','tk']
     }
 
 setup(
