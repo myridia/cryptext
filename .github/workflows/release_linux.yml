@@ -1,0 +1,49 @@
+name: Linux
+
+on:
+  push:
+    branches: ["main"]
+    tags:
+      - '*'
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write 
+  issues: read
+  packages: none
+jobs:
+  build:
+    if: github.repository_owner == 'myridia'
+    runs-on: ubuntu-22.04  
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Load Env
+        run: |
+          python --version 
+          python -m venv env 
+          source env/bin/activate
+          pip install pip --upgrade
+          pip install -r requirements.txt
+          ./build.sh
+          ls dist/
+          
+      - name: upload release 
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: 'dist/ct_linux'
+          tag: ${{ github.ref }}
+          overwrite: true
+          file_glob: true
+          
+
+          
+        
+  
+            
+
+
+     
