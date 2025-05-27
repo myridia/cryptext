@@ -6,7 +6,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     pyinstaller ct.py --onefile -w --path env/lib/site-packages --name=ct_linux --icon=./ct.ico 
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     echo $OSTYPE
-    pyinstaller ct.py --onefile -w --path env/lib/site-packages --name=ct_macos --icon=./ct.ico 
+    pyinstaller ct.py --onefile -w --path env/lib/site-packages --name=ct_macos 
 elif [[ "$OSTYPE" == "cygwin" ]]; then
     pyinstaller ct.py --onefile --path env/lib/site-packages --name=ct_cygwin  --icon=./ct.ico 
 elif [[ "$OSTYPE" == "msys" ]]; then
