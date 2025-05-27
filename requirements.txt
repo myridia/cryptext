@@ -8,3 +8,4 @@ pyinstaller
 six==1.17.0
 tk
 pip-upgrader
+pillow 
