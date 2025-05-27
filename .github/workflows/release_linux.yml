@@ -14,7 +14,7 @@ permissions:
   issues: read
   packages: none
 jobs:
-  build:
+  build_linux:
     if: github.repository_owner == 'myridia'
     runs-on: ubuntu-22.04  
     steps:
