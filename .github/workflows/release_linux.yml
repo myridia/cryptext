@@ -18,12 +18,12 @@ jobs:
     if: github.repository_owner == 'myridia'
     runs-on: ubuntu-22.04  
     steps:
+      - name: install dependencies
+        run: |
+          sudo apt-get install python3-tk
+       
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: install apt 
-        run : |
-          apt-get install python3-tk
       - name: Load Env
         run: |
           python --version 
