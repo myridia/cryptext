@@ -20,8 +20,8 @@ jobs:
     steps:
       - name: get_repository
         run: |
-          brew install python3
-          brew install python3-tk
+          brew install python
+          brew install python-tk
    
       - name: checkout repo
         uses: actions/checkout@v4
