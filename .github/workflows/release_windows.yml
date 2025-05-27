@@ -32,7 +32,7 @@ jobs:
           ./env/Scripts/Activate.bat
           pip install pip --upgrade
           pip install -r requirements.txt 
-          pyinstaller ct.py --onefile --path env/lib/site-packages --name=uaf_win64.exe
+          pyinstaller ct.py --onefile --path env/lib/site-packages --name=ct_win64.exe
 
           
     
