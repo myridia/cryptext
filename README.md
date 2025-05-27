@@ -2,9 +2,9 @@
 Basic Text Editor what saves it content as encrypted text 
 
 # Requirements
-* You need a system based python from what you create a virutal enviroment
-* python3.7 -m venv env 
-* source env/bin/acitvate
+* OS with Python installed
+* python3.13 -m venv env 
+* source env/bin/activate
 * pip install -r requirements.txt
 * create64linux.sh or run : pyinstaller ct.py --onefile -w --icon=./ct.ico 
 
