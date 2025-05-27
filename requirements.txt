@@ -6,4 +6,5 @@ py2app==0.28.8
 pycparser==2.22
 pyinstaller
 six==1.17.0
+tk
 pip-upgrader
