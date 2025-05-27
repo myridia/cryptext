@@ -15,12 +15,13 @@ permissions:
 
 jobs:
   build_macos_intel:
-    if: github.repository_owner == 'xmyridia'
+    if: github.repository_owner == 'myridia'
     runs-on: macos-13
     steps:
       - name: get_repository
         run: |
-          brew install python
+          brew install python3
+          brew install python3-tk
    
       - name: checkout repo
         uses: actions/checkout@v4
