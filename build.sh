@@ -3,7 +3,7 @@
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     echo $OSTYPE
-    pyinstaller ct.py --onefile -w --path env/lib/site-packages --name=ct_linux --icon=./ct.ico --hidden-import=tkinter -y
+    pyinstaller ct.spec --onefile -w --path env/lib/site-packages --name=ct_linux --icon=./ct.ico --hidden-import=tkinter -y
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     echo $OSTYPE
     pyinstaller ct.py --onefile -w --path env/lib/site-packages --name=ct_macos 
