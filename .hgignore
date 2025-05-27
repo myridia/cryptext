@@ -1,0 +1,15 @@
+syntax:glob
+.DS_Store
+target
+*~
+.eggs
+build
+dist
+env
+\#*
+\.#*
+\.\#*
+
+syntax: regexp
+logs/(?!\.hidden).+$
+
