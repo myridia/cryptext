@@ -1,3 +1,5 @@
+<img src="cryptext.svg" alt="cryptext" width="120">
+
 # cryptext
 Basic Text Editor what saves it content as encrypted text 
 
